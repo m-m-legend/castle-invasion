@@ -1,0 +1,57 @@
+Castle Invasion
+
+Base lógica escalonável de um RPG indie.
+Arquitetura Data Driven Game Design (DDGD) com Domain Respect (DR) como bússola.
+
+Em suma, em termos de importação e semântica:
+
+data -> NADA
+core -> data | stdlib
+entities -> core | stdlib 
+systems -> entities | core | stdlib
+ui -> systems | core
+main -> TUDO
+
+OBS.: entities/ e ui/ acessam data/ por meio de core/<registry>.py
+
+
+Próximas etapas:
+
+-> Criar View Models em systems/battle_view.py para ui/battle_ui.py (DTO)
+-> Retirar lógica de loot de ui/battle_ui.py para systems/combat_system.py (Loot System)
+-> Retirar lógica de modifier de ui/battle_ui.py para systems/combat_system.py (Modifier System)
+-> Consolidar core/state.py (GameState)
+
+Árvore do projeto:
+
+│   main.py
+│   notes.txt
+│   
+├───core
+│       input.py
+│       item_registry.py
+│       sprite_registry.py
+│       state.py
+│       
+├───data
+│       enemies_data.py
+│       items_data.py
+│       room_descriptions.py
+│       sprites.py
+│       world_map.py
+│       
+├───entities
+│       enemy.py
+│       inventory.py
+│       player.py
+│       
+├───systems
+│       combat_system.py
+│       inventory_system.py
+│       map_system.py
+│       movement.py
+│       
+└───ui
+        battle_ui.py
+        inventory_ui.py
+        map_ui.py
