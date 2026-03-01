@@ -54,7 +54,8 @@ class GameState:
                 health=data["health"],
                 damage=data["damage"],
                 sprite_key=data["sprite_key"],
-                placement=data["placement"]
+                placement=data["placement"],
+                loot = data["loot"]
             )
             room = data["placement"]
             self.register_enemy(room, enemy_id, enemy)

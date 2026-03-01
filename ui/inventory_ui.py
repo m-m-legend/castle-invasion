@@ -93,3 +93,13 @@ def trade_heal(screen, player, new_heal: str):
 def add_item(screen, player, new_item: str):
     add_item_system(player, new_item)
     screen.print_at(f"Novo item '{get_item(new_item)['name']}' adicionado.", 2, 14)
+
+def handle_loot(screen, player, loot_events):
+    for event in loot_events:
+        if event["type"] == "weapon":
+            add_weapon(screen, player, event["id"])
+        elif event["type"] == "item":
+            add_item(screen, player, event["id"])
+        elif event["type"] == "heal":
+            set_heal_item(screen, player, event["id"])
+

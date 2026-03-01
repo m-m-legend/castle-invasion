@@ -17,10 +17,8 @@ OBS.: entities/ e ui/ acessam data/ por meio de core/<registry>.py
 
 Próximas etapas:
 
--> Criar View Models em systems/battle_view.py para ui/battle_ui.py (DTO)
--> Retirar lógica de loot de ui/battle_ui.py para systems/combat_system.py (Loot System)
--> Retirar lógica de modifier de ui/battle_ui.py para systems/combat_system.py (Modifier System)
--> Consolidar core/state.py (GameState)
+-> Integrar core/state.py aos sistemas e UIs (GameState)
+-> Construir main.py (Primeira Versão)
 
 Árvore do projeto:
 
@@ -50,6 +48,7 @@ Próximas etapas:
 │       inventory_system.py
 │       map_system.py
 │       movement.py
+        battle_view.py
 │       
 └───ui
         battle_ui.py

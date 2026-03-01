@@ -1,11 +1,12 @@
 class Enemy:
-    def __init__(self, id: str, name: str, health: float, damage: float, sprite_key: str, placement: str):
+    def __init__(self, id: str, name: str, health: float, damage: float, sprite_key: str, placement: str, loot: dict):
         self.name = name
         self.id = id
         self.health = health
         self.damage = damage
         self.sprite_key = sprite_key
         self.placement = placement
+        self.loot = loot
     def get_id(self):
         return self.id
     def is_defeated(self):
