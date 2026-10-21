@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "castle-invasion"
+version = "0.2.0"
+description = "Mini engine RPG de terminal em Python com conteúdo orientado a dados"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Marcos Mendonça"}]
+dependencies = []
+
+[project.optional-dependencies]
+tui = ["asciimatics>=1.15,<2"]
+dev = ["ruff>=0.9,<1"]
+exe = ["pyinstaller>=6,<7"]
+
+[project.scripts]
+castle-invasion = "castle_invasion.bootstrap:main"
+
+[project.urls]
+Repository = "https://github.com/m-m-legend/castle-invasion"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"castle_invasion.data" = ["*.json"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
