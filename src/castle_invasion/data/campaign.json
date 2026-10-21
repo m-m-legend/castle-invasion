@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "title": "Castle Invasion",
+  "map": [
+    [
+      "Entrada",
+      "Jardim",
+      "Sala de Arte",
+      "Corredor",
+      "Torre"
+    ],
+    [
+      "Estábulo",
+      "Pátio",
+      "Sala de Guardas",
+      "Banheiro",
+      "Enfermaria"
+    ],
+    [
+      "Calabouço",
+      "Lavanderia",
+      "Salão de festas",
+      "Quarto de Hóspedes",
+      "Aposentos"
+    ],
+    [
+      "Sala de Armas",
+      "Cozinha",
+      "Sala de Jantar",
+      "Jardim de Inverno",
+      "Sala do Mago"
+    ],
+    [
+      "Laboratório",
+      "Biblioteca",
+      "Capela",
+      "Sala do Trono",
+      "Tesouro"
+    ]
+  ],
+  "rooms": {
+    "Entrada": {
+      "description": [
+        "Você se depara com um grande salão principal, um longo tapete vermelho que segue por uma sala escura.",
+        "As paredes são feitas de uma pedra antiga e parecem prestes a desabar. Você sente que não é bem-vindo neste local."
+      ],
+      "loot": []
+    },
+    "Jardim": {
+      "description": [
+        "Você entra no jardim do castelo, é possível ver margaridas e rosas por todos os lados, quase uma visão do paraíso.",
+        "É possível ver duas rodas de água que irrigam a plantação."
+      ],
+      "loot": [
+        {
+          "kind": "heal",
+          "id": "semente_regeneradora"
+        }
+      ]
+    },
+    "Sala de Arte": {
+      "description": [
+        "Você adentra a Sala de Arte, existem obras de todos os tamanhos e tipos por todos os lados.",
+        "Algumas parecem seguir com os olhos, talvez você esteja alucinando."
+      ],
+      "loot": []
+    },
+    "Corredor": {
+      "description": [
+        "Você entra em um corredor estreito, a luz baixa das tochas não te permite enxergar o final.",
+        "O que será que se esconde na escuridão?"
+      ],
+      "loot": []
+    },
+    "Torre": {
+      "description": [
+        "Você adentra a torre do castelo, o chão está bastante empoeirado.",
+        "Pelo buraco na parede você consegue ver a lua cheia brilhando no céu."
+      ],
+      "loot": []
+    },
+    "Estábulo": {
+      "description": [
+        "Você entra no estábulo e vê várias baias vazias.",
+        "Exceto no canto, de onde vem um barulho peculiar."
+      ],
+      "loot": []
+    },
+    "Pátio": {
+      "description": [
+        "Uma das áreas abertas do castelo, com uma fonte belíssima revestida em mármore.",
+        "Estátuas de antigos governantes observam o local."
+      ],
+      "loot": []
+    },
+    "Sala de Guardas": {
+      "description": [
+        "Ao entrar no salão, você se vê cercado de guardas por todas as direções."
+      ],
+      "loot": []
+    },
+    "Banheiro": {
+      "description": [
+        "Você vê apenas um buraco no chão com fezes secas, além de uma pia e um espelho.",
+        "Parece ser apenas um banheiro ordinário."
+      ],
+      "loot": []
+    },
+    "Enfermaria": {
+      "description": [
+        "Você entra na enfermaria, consegue ver esqueletos de antigos pacientes deitados nas camas.",
+        "Há sementes medicinais em cima do balcão."
+      ],
+      "loot": [
+        {
+          "kind": "item",
+          "id": "pocao_cura"
+        },
+        {
+          "kind": "item",
+          "id": "pocao_cura"
+        }
+      ]
+    },
+    "Calabouço": {
+      "description": [
+        "Ao descer pelo alçapão, você vê esqueletos de pessoas que apodreceram neste local.",
+        "Até que um deles parece ganhar vida."
+      ],
+      "loot": []
+    },
+    "Lavanderia": {
+      "description": [
+        "Parece ser um local sem muita relevância.",
+        "Há quatro baldes vazios em frente ao tanque."
+      ],
+      "loot": []
+    },
+    "Salão de festas": {
+      "description": [
+        "Você se depara com um vasto espaço de pedra escura, dominado por pilares e arcos majestosos.",
+        "O eco de tempos passados ressoa entre os escombros."
+      ],
+      "loot": []
+    },
+    "Quarto de Hóspedes": {
+      "description": [
+        "Você vê móveis antigos cobertos por teias de aranha e cortinas desbotadas.",
+        "Ventos gelados penetram pelas janelas quebradas."
+      ],
+      "loot": []
+    },
+    "Aposentos": {
+      "description": [
+        "Os aposentos exalam grandiosidade decadente, com tapeçarias desbotadas e móveis antigos.",
+        "Testemunhas silenciosas do esplendor que ali reinou."
+      ],
+      "loot": []
+    },
+    "Sala de Armas": {
+      "description": [
+        "Você vê armaduras enferrujadas, espadas pendendo das paredes e escudos marcados pelo tempo.",
+        "O cheiro de metal e mofo impregna o ar."
+      ],
+      "loot": [
+        {
+          "kind": "weapon",
+          "id": "arco_flecha"
+        }
+      ]
+    },
+    "Cozinha": {
+      "description": [
+        "Fogões de pedra e caldeirões enferrujados ocupam o local.",
+        "Ratos exploram os cantos escuros em busca de migalhas."
+      ],
+      "loot": [
+        {
+          "kind": "item",
+          "id": "pocao_cura"
+        }
+      ]
+    },
+    "Sala de Jantar": {
+      "description": [
+        "Uma mesa desgastada e cadeiras alinhadas ocupam a sala.",
+        "As paredes testemunham memórias de um passado esquecido."
+      ],
+      "loot": []
+    },
+    "Jardim de Inverno": {
+      "description": [
+        "Plantas petrificadas pela geada e bancos de pedra cobertos por neve.",
+        "A luz fraca do sol se filtra pelas vidraças."
+      ],
+      "loot": []
+    },
+    "Sala do Mago": {
+      "description": [
+        "Estantes repletas de grimórios antigos e artefatos mágicos brilham em vitrines encantadas.",
+        "Um idoso simpático observa você. Ou não."
+      ],
+      "loot": []
+    },
+    "Laboratório": {
+      "description": [
+        "Mesas repletas de frascos brilhantes e máquinas zumbindo com energia.",
+        "Ingredientes raros e livros antigos adornam prateleiras."
+      ],
+      "loot": [
+        {
+          "kind": "item",
+          "id": "pocao_cura"
+        }
+      ]
+    },
+    "Biblioteca": {
+      "description": [
+        "Estantes repletas de tomos empoeirados e mesas onde estudiosos buscaram segredos ancestrais."
+      ],
+      "loot": []
+    },
+    "Capela": {
+      "description": [
+        "Vitrais quebrados filtram a luz formando sombras peculiares.",
+        "Bancos de madeira desgastados pelo tempo alinham-se em silêncio."
+      ],
+      "loot": [
+        {
+          "kind": "heal",
+          "id": "biblia"
+        }
+      ]
+    },
+    "Sala do Trono": {
+      "description": [
+        "Um trono de ébano e ouro domina o centro da sala.",
+        "Tapeçarias contam a história do reino."
+      ],
+      "loot": []
+    },
+    "Tesouro": {
+      "description": [
+        "Pilhas de moedas e joias cintilantes cobrem o chão.",
+        "Um baú com uma fechadura quadrada chama sua atenção."
+      ],
+      "loot": []
+    }
+  },
+  "weapons": {
+    "espada": {
+      "name": "Espada",
+      "damage": 10,
+      "type": "melee"
+    },
+    "escudo": {
+      "name": "Escudo",
+      "damage": 5,
+      "type": "defense",
+      "block": 0.3
+    },
+    "lanca": {
+      "name": "Lança",
+      "damage": 12,
+      "type": "melee"
+    },
+    "cajado_mago": {
+      "name": "Cajado do Mago",
+      "damage": 15,
+      "type": "magic",
+      "boost": 1.2
+    },
+    "arco_flecha": {
+      "name": "Arco e Flecha",
+      "damage": 11,
+      "type": "ranged"
+    }
+  },
+  "heals": {
+    "biblia": {
+      "name": "Bíblia",
+      "enemy_damage_multiplier": 0.3,
+      "cooldown": 2,
+      "message": "O senhor é meu pastor, e nada me faltará...",
+      "heal_fraction": 0.1
+    },
+    "semente_regeneradora": {
+      "name": "Semente Regeneradora",
+      "enemy_damage_multiplier": 0.1,
+      "cooldown": 2,
+      "message": "Você sente sua vida se regenerando...",
+      "heal_fraction": 0.2
+    }
+  },
+  "items": {
+    "chave_quadrada": {
+      "name": "Chave Quadrada",
+      "description": "Uma chave de formato quadrado, usada para abrir cadeados especiais.",
+      "type": "key",
+      "usage": "Abre portas ou baús especiais que requerem uma chave quadrada."
+    },
+    "pocao_cura": {
+      "name": "Poção de Cura",
+      "description": "Uma poção que restaura 50 pontos de vida.",
+      "type": "consumable",
+      "health_restore": 50
+    }
+  },
+  "enemies": {
+    "cavaleiro_indomado": {
+      "health": 50,
+      "damage": 5,
+      "name": "Cavaleiro Indomado",
+      "sprite_key": "Cavaleiro Indomado",
+      "placement": "Estábulo",
+      "loot": [
+        {
+          "kind": "weapon",
+          "id": "lanca"
+        }
+      ],
+      "xp": 25
+    },
+    "serpente_de_fogo": {
+      "health": 60,
+      "damage": 8,
+      "name": "Serpente de Fogo",
+      "sprite_key": "Serpente de Fogo",
+      "placement": "Sala de Arte",
+      "loot": [],
+      "xp": 30
+    },
+    "esqueleto_errante": {
+      "health": 30,
+      "damage": 12,
+      "name": "Esqueleto Errante",
+      "sprite_key": "Esqueleto Errante",
+      "placement": "Calabouço",
+      "loot": [],
+      "xp": 20
+    },
+    "mago": {
+      "health": 75,
+      "damage": 15,
+      "name": "Mago",
+      "sprite_key": "Mago",
+      "placement": "Sala do Mago",
+      "loot": [
+        {
+          "kind": "item",
+          "id": "chave_quadrada"
+        },
+        {
+          "kind": "weapon",
+          "id": "cajado_mago"
+        }
+      ],
+      "xp": 50
+    }
+  },
+  "sprites": {
+    "castle": [
+      "               |>>>",
+      "               |",
+      "           _  _|_  _",
+      "          |;|_|;|_|;|",
+      "          \\.    .  /",
+      "           \\:  .  /",
+      "            ||:   |",
+      "            ||:.  |",
+      "            ||:  .|",
+      "            ||:   |       \\,/",
+      "            ||: , |            /`\\",
+      "            ||:   |",
+      "            ||: . |",
+      "           __||_   |",
+      "    ____--`~    '--~~__",
+      "-~--~                   ~---__ ,--~'",
+      "                                 ~~----_____-~'"
+    ],
+    "player": [
+      "      _,.",
+      "    ,` -.)",
+      "   ( _/-\\ \\-._",
+      "  /,|`--._,-^|            ,",
+      "  \\_| |`-._/||          ,'|",
+      "    |  `-, / |         /  /",
+      "    |     || |        /  /",
+      "     `r-._||/   __   /  /",
+      " __,-<_     )`-/  `./  /",
+      "'  \\   `---'   \\   /  /",
+      "    |           |./  /",
+      "    /           //  /",
+      "\\_/' \\         |/  /",
+      " |    |   _,^-'/  /",
+      " |    , ``  (\\/  /_",
+      "  \\,.->._    \\X-=/^",
+      "  (  /   `-._//^`",
+      "   `Y-.____(__}",
+      "    |     {__)"
+    ],
+    "enemies": {
+      "Cavaleiro Indomado": [
+        "            ,;~;,",
+        "                /\\_",
+        "               (  /",
+        "              (()      //)",
+        "               | \\   ,,;;'",
+        "           __ _(  )m=(((((((((((((================--------",
+        "         /'  ' '()/~' '.(, |",
+        "      ,;(      )||     |  ~",
+        "     ,;' \\    /-(.;,   )",
+        "         ) /       ) /",
+        "        //         ||",
+        "       )_\\         )_"
+      ],
+      "Serpente de Fogo": [
+        "      ",
+        "   _________         _________",
+        "  /         \\       /         \\ ",
+        " /  /~~~~~\\  \\     /  /~~~~~\\  \\  ",
+        " |  |     |  |     |  |     |  |",
+        " |  |     |  |     |  |     |  |",
+        " |  |     |  |     |  |     |  |         /",
+        " |  |     |  |     |  |     |  |       //",
+        "(o  o)    \\  \\_____/  /     \\  \\_____/ /",
+        " \\__/      \\         /       \\        /",
+        "  |         ~~~~~~~~~         ~~~~~~~~",
+        "  ^"
+      ],
+      "Esqueleto Errante": [
+        "           ______",
+        "        .-\"      \"-.",
+        "       /            \\ ",
+        "      |              |",
+        "      |,  .-.  .-.  ,|",
+        "      | )(__/  \\__)( | ",
+        "      |/     /\\     \\|",
+        "      (_     ^^     _)",
+        "       \\__|IIIIII|__/",
+        "        | \\IIIIII/ |",
+        "        \\          /",
+        "         `--------`"
+      ],
+      "Mago": [
+        "        ,/   *",
+        "      _,'/_   |",
+        "      `(\")' ,'/",
+        "   _ _,-H-./ /",
+        "   \\_\\_\\.   /",
+        "     )\" |  (",
+        "  __/   H   \\_",
+        "  \\    /|\\    /",
+        "   `--'|||`--'",
+        "      ==^==",
+        " ",
+        " "
+      ]
+    }
+  },
+  "player": {
+    "max_health": 100,
+    "start_room": "Entrada",
+    "weapons": [
+      "espada",
+      "escudo"
+    ],
+    "items": [
+      "pocao_cura",
+      "pocao_cura"
+    ],
+    "heal": null
+  },
+  "rules": {
+    "unarmed_damage": 2,
+    "base_block": 0.15,
+    "xp_per_level": 50,
+    "health_per_level": 10,
+    "damage_per_level": 2,
+    "flee_damage_multiplier": 1.0
+  },
+  "objective": {
+    "room": "Tesouro",
+    "key": "chave_quadrada",
+    "message": "Você abriu o tesouro e conquistou o castelo. Vitória!"
+  }
+}
